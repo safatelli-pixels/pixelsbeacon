@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e88e5</color>
+    <color name="colorPrimaryDark">#1e88e5</color>
+    <color name="colorAccent">#4a4a4a</color>
+    <!-- menu color -->
+    <color name="grayItemMenu">#F0F0F0</color>
+    <!-- choice langauge screen -->
+    <color name="stocke_choice_language">#eb605d</color>
+
+
+    <!-- color scanner -->
+    <color name="viewfinder_border">#1e88e5</color>
+    <color name="viewfinder_laser">#1e88e5</color>
+</resources>

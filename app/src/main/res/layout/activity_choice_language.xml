@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_langue"
+    tools:context="com.pixelstrade.audioguide.ui.activitys.ChoiceLanguageActivity">
+
+
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true">
+
+
+
+    <TextView
+        android:id="@+id/choice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choice_language_text"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_centerHorizontal="true"
+        tools:targetApi="jelly_bean" />
+
+    <Button
+        android:id="@+id/changeLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/choice_text"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_light"
+        android:background="@drawable/shape_choice_language_button"
+        android:text="@string/french"
+        android:drawableRight="@drawable/ic_arrow"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:targetApi="jelly_bean" />
+
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/suivant"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

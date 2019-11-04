@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pixelstrade.audioguide">
+
+    <!-- permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- For Android 6.0+ -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+
+    <application
+        android:name=".AudioGuide"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.kontakt.sdk.android.ble.service.ProximityService"
+            android:exported="false" />
+        <!-- MainActivity -->
+        <activity
+            android:name=".ui.activitys.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- choice language activity -->
+        <activity
+            android:name=".ui.activitys.ChoiceLanguageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- SplashScreenActivity -->
+
+        <activity
+            android:name=".ui.activitys.ChoiceNavigationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activitys.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".ui.activitys.DetailsArticleActivity" />
+        <activity android:name=".ui.activitys.VideoPlayerActivity" />
+
+        <service
+            android:name=".services.BackgroundScanService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="993cbc59706a813e28b41ee822a5a4a5685f43ea" />
+
+        <activity android:name=".ui.activitys.AudioPlayerActivity"></activity>
+    </application>
+
+</manifest>

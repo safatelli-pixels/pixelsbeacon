@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/nav_museum"
+            android:icon="@drawable/ic_musem"
+            android:title="@string/la_mus_e" />
+
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_scan"
+            android:title="@string/scan" />
+
+
+
+      <!--  <item
+            android:id="@+id/nav_visite"
+            android:icon="@drawable/ic_map"
+            android:title="@string/ma_visite" />-->
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_parametres"
+            android:title="@string/param_tres" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_apropos"
+            android:title="@string/a_propos" />
+
+
+
+
+    </group>
+
+
+</menu>

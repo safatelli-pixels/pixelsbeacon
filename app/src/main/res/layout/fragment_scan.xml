@@ -1,0 +1,150 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pixelstrade.audioguide.ui.fragments.ScanFragment">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+
+        <!-- top view -->
+
+        <FrameLayout
+            android:id="@+id/scannerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            />
+
+
+
+
+        <!-- bottom view -->
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:background="@drawable/shape_choice_language_button"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/scan_qr_code"
+                    android:drawableLeft="@drawable/ic_qr_code"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    tools:targetApi="jelly_bean" />
+
+                <!-- OU bloc -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <!-- first line -->
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="0.5dp"
+                        android:background="@android:color/darker_gray"/>
+                    <!-- OR text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:text="@string/or_text"/>
+
+                    <!-- second line -->
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="0.5dp"
+                        android:background="@android:color/darker_gray"/>
+
+
+                </LinearLayout>
+
+
+                <!-- Text Indication -->
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/enter_number_article_text"
+                    tools:targetApi="jelly_bean" />
+
+
+                <!-- EditText to enter number articale -->
+                <EditText
+                    android:id="@+id/articleNumber"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="@color/stocke_choice_language"
+                    android:hint="@string/enter_articale_number"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/montserrat_light"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/shape_red_edittext"
+                    tools:targetApi="jelly_bean" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/grayItemMenu"
+        android:src="@drawable/ic_ic_check"
+        app:layout_anchor="@id/scannerView"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

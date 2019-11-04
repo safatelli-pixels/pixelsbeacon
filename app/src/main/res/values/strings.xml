@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">PixelsBeacon</string>
+    <string name="international_museum_text">musée internationale</string>
+    <string name="croix_rouge_text">de la croix-rouge</string>
+    <string name="croissant_rouge_text">et du croissant-rouge</string>
+    <string name="choice_language_text">Je choisis ma langue</string>
+    <string name="welcome_to_museum_text">Bienvenue au musée</string>
+    <string name="international_croix_rouge_text">internationale de la croix-rouge</string>
+    <string name="copyrihgt">© Powred by PixelsTrade</string>
+    <string name="visite_autonome_text">visite autonome</string>
+    <string name="visit_with_guide">visite guidée</string>
+    <string name="ma_visite">Visit</string>
+    <string name="scan">Scan</string>
+    <string name="la_mus_e">Assets</string>
+    <string name="param_tres">Parameters</string>
+    <string name="a_propos">About</string>
+    <string name="about">The solution PixelsBeacon enables to create new experiences and improve management of assets. It transforms any assets or place in a connected and interactive item.  We can generate study, workflow and alerts from the information collected.</string>
+    <string name="se_d_connecter">Se déconnecter</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="or_text">OU</string>
+    <string name="enter_number_article_text">Entrer le numéro de l\'article</string>
+    <string name="enter_articale_number">Introduire le N° de l\'articale</string>
+    <string name="suivant">Suivant</string>
+    <string name="french">Français</string>
+    <string name="english">English</string>
+
+
+    <!-- permission string -->
+    <string name="camera_permission_confirmation">Nécessite l\'autorisation d\'accéder à la caméra.</string>
+    <string name="location_permission_confirmation">Nécessite l\'autorisation d\'accéder à la position</string>
+    <string name="camera_permission_not_granted">Ne peut rien faire sans l\'autorisation de la caméra.</string>
+    <string name="location_permission_not_granted">Impossible de trouver votre emplacement sans autorisation d\'accéss à la position</string>
+    <string name="read_sound_text">Ecouter le texte</string>
+    <string name="read_video">Voir le video</string>
+    <string name="details_text">Détails</string>
+    <string name="notification_title">Article Detected</string>
+
+    <!-- youtube data v3 key -->
+    <string name="youtube_key">AIzaSyAYyoFYNMhbxKsc2tpCG_MVp312GsMxzRo</string>
+    <string name="player_error">Erreur d\'initialization youtube player</string>
+</resources>

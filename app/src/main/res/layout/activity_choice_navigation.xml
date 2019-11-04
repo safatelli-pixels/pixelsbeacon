@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/bg_connect"
+    android:paddingTop="20dp"
+    tools:context="com.pixelstrade.audioguide.ui.activitys.ChoiceNavigationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/welcome_to_museum_text"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@android:color/white"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/international_croix_rouge_text"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@android:color/white"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/croissant_rouge_text"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@android:color/white"
+        tools:targetApi="jelly_bean" />
+
+
+        <!-- autonome visit -->
+
+            <LinearLayout
+                android:id="@+id/visitAutonome"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_choice_navigation"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ic_autonome"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/visite_autonome_text"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/colorPrimary"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_arrow"/>
+
+
+
+            </LinearLayout>
+
+
+        <!-- visit with Guide -->
+
+        <LinearLayout
+            android:id="@+id/visitWithGuide"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_choice_navigation"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ic_guide"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:text="@string/visit_with_guide"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorPrimary"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_arrow"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyrihgt"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="12sp"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        tools:targetApi="jelly_bean" />
+
+</RelativeLayout>
